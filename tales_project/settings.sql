@@ -1,3 +1,4 @@
 CREATE DATABASE tales;
 CREATE USER talesuser WITH PASSWORD '123';
 GRANT ALL PRIVILEGES ON DATABASE tales TO talesuser;
+GRANT postgres TO talesuser;

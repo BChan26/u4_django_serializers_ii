@@ -22,7 +22,7 @@ class ReviewSerializer(serializers.HyperlinkedModelSerializer):
     )
     class Meta:
         model = Review
-        fields = ('id', 'name', 'title', 'body', 'books', 'users')
+        fields = ('id', 'name', 'title', 'body', 'books', 'users', "rating")
 class BookSerializer(serializers.HyperlinkedModelSerializer):
     reviews = ReviewSerializer(
         many = True,
